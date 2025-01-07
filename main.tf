@@ -116,7 +116,7 @@ module "alb" {
          port = 80
         }
       }
-    }
+    },
   ]
 
   tags = {
