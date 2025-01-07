@@ -69,7 +69,7 @@ module "alb" {
         my_target = {
           target_id = aws_instance.blog.id
           port = 80
-        },
+        }
       }
     }
   ]
@@ -105,7 +105,7 @@ resource "aws_security_group" "blog" {
   description = "Allow http and https in. Allow everything out"
 
   vpc_id      = data.aws_vpc.default.id
-},
+}
 
 resource "aws_security_group_rule" "blog_http_in" {
   type              = "ingress"
